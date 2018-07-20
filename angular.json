@@ -24,8 +24,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "src/index.less"
+              "src/assets/styles/index.less",
+              "src/assets/styles/index.scss",
+              "src/assets/styles/index.css"
             ],
             "scripts": []
           },
