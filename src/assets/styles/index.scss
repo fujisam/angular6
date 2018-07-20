@@ -1,8 +1,13 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 @font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-family: 'Courier Prime';
+    src: url(../fonts/courier_prime/CourierPrime.ttf) format("truetype");
 }
 
+// @font-face {
+//     font-family: 'Roboto';
+//     src: url(../fonts/roboto/Roboto-Regular.ttf) format('truetype');
+// }
 // @font-face {
 //     font-family: 'Roboto';
 //     src: url('webfont.eot'); /* IE9 Compat Modes */
@@ -29,6 +34,11 @@ input[text],
 button {
     color: #888;
     font-family: Cambria, Georgia;
+}
+
+.main-container {
+    @extend .border;
+    padding-top: 20px;
 }
 
 /* Application-wide Styles */
@@ -240,6 +250,11 @@ button.delete {
 
 /* MessagesComponent's private CSS styles */
 
+.logs {
+    font-family: 'Courier Prime';
+    font-size: 12px;
+}
+
 button.clear {
     font-family: Arial;
     background-color: #eee;
@@ -264,3 +279,5 @@ button.clear {
     color: #888;
     margin-bottom: 12px;
 }
+
+
