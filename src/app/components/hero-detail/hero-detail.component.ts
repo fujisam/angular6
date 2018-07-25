@@ -10,6 +10,7 @@ import { HeroService } from '../../services/hero.service';
   templateUrl: './hero-detail.component.html',
   styleUrls: []
 })
+
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
 
