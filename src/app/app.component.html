@@ -1,7 +1,6 @@
-<div class="container main-container">
-
+<div class="container main-container border pb-3">
     <header>
-        <div class="container">
+        <div class="container border pt-3 pb-3">
             <h1>{{title}}</h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -15,21 +14,18 @@
                     </ul>
                 </div>
             </nav>
-
         </div>
     </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-9">
+    <div class="container-fluid border">
+        <div class="row pt-3">
+            <div class="col-8">
                 <router-outlet></router-outlet>
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <app-logs></app-logs>
             </div>
         </div>
     </div>
-
 </div>
 
 

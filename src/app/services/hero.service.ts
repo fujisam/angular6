@@ -115,7 +115,7 @@ export class HeroService {
 
   /** Log a HeroService message with the logService */
   private log(log: string) {
-    this.logService.add('HeroService: ' + log);
+    this.logService.add('LogService: ' + log);
   }
 }
 
