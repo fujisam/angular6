@@ -10,17 +10,12 @@
   </button>
 </div>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
+<ul class="list-group data-list">
+  <li class="list-group-item d-flex justify-content-between" *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
-    <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
-
-
-
-
-
+    <button class="pull-right" title="delete" (click)="delete(hero)">x</button>
   </li>
 </ul>
 
