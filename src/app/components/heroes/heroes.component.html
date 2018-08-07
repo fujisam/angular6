@@ -11,12 +11,10 @@
 <ul class="list-group data-list">
   <li class="list-group-item d-flex justify-content-between rounded" *ngFor="let data of heroes">
     <a routerLink="/detail/{{data.id}}">
-      <span class="badge">{{data.id}}</span> {{data.name}}
+      <span class="badge">{{ data.id }}</span> {{ data.name }}
     </a>
     <button type="button" title="delete" class="close pull-right rounded-right" aria-label="Close" (click)="delete(data)">
       <span aria-hidden="true">&times;</span>
     </button>
   </li>
 </ul>
-
-

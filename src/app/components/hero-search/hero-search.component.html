@@ -1,13 +1,13 @@
 <div id="search-component">
-  <h3>Search</h3>
-  <input #searchBox id="search-box" autocomplete="off" (keyup)="search(searchBox.value)" />
-  <ul class="search-result">
-    <li *ngFor="let hero of heroes$ | async">
-      <a routerLink="/detail/{{hero.id}}">
-        {{hero.name}}
-      </a>
-    </li>
-  </ul>
+  <h3 class="d-inline"> Search: </h3>
+  <div class="d-inline">
+    <input class="rounded" #searchBox id="search-box" autocomplete="off" (keyup)="search(searchBox.value)" />
+    <ul class="search-result">
+      <li *ngFor="let hero of heroes$ | async">
+        <a routerLink="/detail/{{ hero.id }}">
+          {{ hero.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
-
-
