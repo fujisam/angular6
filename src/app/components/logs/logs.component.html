@@ -1,9 +1,0 @@
-<h3>Logs ({{ logService.logs.length }})</h3>
-<div *ngIf="logService.logs.length">
-    <div class="logs" *ngFor="let log of logService.logs">{{ log }}</div>
-    <div class="text-right">
-        <button class="btn btn-primary mt-3 mr-3" (click)="logService.clear()"> clear </button>
-    </div>
-</div>
-
-

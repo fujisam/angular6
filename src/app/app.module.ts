@@ -15,7 +15,7 @@ import { HeroDetailComponent } from "./components/hero-detail/hero-detail.compon
 import { HeroesComponent } from "./components/heroes/heroes.component";
 import { HeroSearchComponent } from "./components/hero-search/hero-search.component";
 
-import { LogsComponent } from "./components/logs/logs.component";
+import { RegisterLogsComponent } from "./components/register-logs/register-logs.component";
 
 @NgModule({
   imports: [
@@ -37,11 +37,8 @@ import { LogsComponent } from "./components/logs/logs.component";
     HeroesComponent,
     HeroDetailComponent,
     HeroSearchComponent,
-    LogsComponent
+    RegisterLogsComponent
   ],
   bootstrap: [AppComponent]
 })
-
 export class AppModule {}
-
-

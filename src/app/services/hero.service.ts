@@ -5,7 +5,7 @@ import { Observable, of } from "rxjs";
 import { catchError, map, tap } from "rxjs/operators";
 
 import { Hero } from "./../hero";
-import { LogService } from "./log.service";
+import { RegisterLogService } from "./register-log.service";
 
 const httpOptions = {
   headers: new HttpHeaders({ "Content-Type": "application/json" })
@@ -15,7 +15,10 @@ const httpOptions = {
 export class HeroService {
   private heroesUrl = "api/heroes"; // URL to web api
 
-  constructor(private http: HttpClient, private logService: LogService) {}
+  constructor(
+    private http: HttpClient,
+    private logService: RegisterLogService
+  ) {}
 
   /** GET heroes from the server */
   getHeroes(): Observable<Hero[]> {

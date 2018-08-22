@@ -1,0 +1,9 @@
+<h3>Logs ({{ registerLogService.registerLogs.length }})</h3>
+<div *ngIf="registerLogService.registerLogs.length">
+    <div class="logs" *ngFor="let registerLog of registerLogService.registerLogs">
+        {{ registerLog }}
+    </div>
+    <div class="text-right">
+        <button class="btn btn-primary mt-3 mr-3" (click)="registerLogService.clear()"> clear </button>
+    </div>
+</div>
